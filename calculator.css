@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow: hidden;
+}
+
+.container{
+  margin: 10px auto;
+  width: 20rem;
+  height: 32rem;
+  background: #000 ;
+  
+  /* offset-x | offset-y | color, x is going to be horizontal while y is vertical */
+  box-shadow: 10px 10px rgba(0,0,0,0.4);
+  border-radius: 1rem 1rem;
+  border-color: 10px solid black;
+}
+
+.screen{
+  width: 100%;
+  height: 70px;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  background: #000;
+  color: white;
+  text-align: right;
+  pointer-events: none;
+  border-radius: 10px 10px;
+}
+.screen2{
+  width: 100%;
+  height: 70px;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  background: #000;
+  color: white;
+  text-align: right;
+  pointer-events: none;
+  border-radius: 10px 10px;
+  /* from here is very optional. i.e for the screen2 */
+  opacity: .3;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+button{
+  flex: 0 0 30%;
+  margin: 5px 0;
+  width: 60px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 1000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:active{
+  font-size: 10px;
+  height: 35px;
+  width: 50px;
+}
+button:hover{
+  background-color: wheat;
+}
+
+.btn-orange{
+  background-color: orange;
+}
+
+.btn-green{
+  background-color: green;
+}
+
+.btn-red{
+  background-color: red;
+}
+
+.btn-orange:hover{
+  background-color: yellow;
+}
+
+.btn-green:hover{
+  background-color: greenyellow;
+}
+
+.btn-red:hover{
+  background-color: lightpink;
+}
